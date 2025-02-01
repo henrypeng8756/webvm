@@ -243,3 +243,5 @@ jobs:
       - name: Deploy GitHub Pages site
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          token: ${{ secrets.WEBVM_SECRET }}
